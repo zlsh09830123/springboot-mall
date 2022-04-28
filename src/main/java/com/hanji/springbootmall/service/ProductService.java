@@ -3,7 +3,11 @@ package com.hanji.springbootmall.service;
 import com.hanji.springbootmall.dto.ProductRequest;
 import com.hanji.springbootmall.model.Product;
 
+import java.util.List;
+
 public interface ProductService {
+
+    List<Product> getProducts();
 
     Product getProductById(Integer productId);
 
