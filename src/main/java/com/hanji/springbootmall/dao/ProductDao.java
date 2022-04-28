@@ -1,6 +1,6 @@
 package com.hanji.springbootmall.dao;
 
-import com.hanji.springbootmall.constant.ProductCategory;
+import com.hanji.springbootmall.dto.ProductQueryParams;
 import com.hanji.springbootmall.dto.ProductRequest;
 import com.hanji.springbootmall.model.Product;
 
@@ -8,7 +8,7 @@ import java.util.List;
 
 public interface ProductDao {
 
-    List<Product> getProducts(ProductCategory category, String search);
+    List<Product> getProducts(ProductQueryParams productQueryParams);
 
     Product getProductById(Integer productId);
 
